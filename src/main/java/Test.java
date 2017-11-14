@@ -37,8 +37,10 @@ public class Test {
                 exercise.GT = new HashSet<Clause>(listClause);
 
                 exercise.thuatToanSuyDienTien(fileRule);
-
                 exercise.showResult(temClause);
+                for (Rule rule : exercise.conslution) {
+                    clauses = exercise.removeClause(rule.getRight());
+                }
             } else {
                 exercise.removeRule(clause);
             }
