@@ -1,0 +1,8 @@
+S,k->a
+S,l->b
+S,m->c
+a,c,B->S
+a,c,B -> b
+S,c -> m
+S,a -> k
+a,p,c -> b

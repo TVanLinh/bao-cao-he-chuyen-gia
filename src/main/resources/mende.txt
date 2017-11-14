@@ -1,0 +1,11 @@
+a,"cạnh a của tam giác", 1
+b,"cạnh b của tam giác", 2
+c,"cạnh c của tam giác", 3
+A,"góc tương ứng với cạnh a", 4
+B,"góc tương ứng với cạnh b", 5
+C,"góc tương ứng với cạnh c", 6
+k,"đường cao tương ứng với cạnh a", 7
+l,"đường cao tương ứng với cạnh b", 8
+m,"đường cao tương ứng với cạnh c", 9
+S,"diện tích của tam giác", 10
+p,"nữa chu vi của tam giác",11

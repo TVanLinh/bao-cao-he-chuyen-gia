@@ -1,0 +1,17 @@
+a,b,c -> p
+b,p,c -> a
+a,p,c -> b
+a,b,p -> c
+S,a -> k
+S,b -> l
+S,c -> m
+a,b,C -> c
+a,c,B -> b
+b,c,A->a
+a,b,C->S
+a,c,B->S
+b,c,A->S
+a,b,c,p->S
+S,k->a
+S,l->b
+S,m->c
