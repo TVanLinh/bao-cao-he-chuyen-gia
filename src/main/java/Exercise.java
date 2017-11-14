@@ -143,14 +143,23 @@ public class Exercise {
         }
     }
 
-    public int getLengthClauseConslution() {
-        Set<Clause> hashSets = new HashSet<Clause>();
-        for (Rule rule : this.conslution) {
-            hashSets.addAll(rule.getLeft());
-            hashSets.add(rule.getRight());
+    public void removeRuleInConslution() {
+        Set<Rule> rules = new HashSet<Rule>();
+        for (Iterator<Rule> iterator = this.RULES.iterator(); iterator.hasNext(); ) {
+            Rule rule = iterator.next();
+            for (Iterator<Rule> iterator1 = this.conslution.iterator(); iterator1.hasNext(); ) {
+                Rule rule1 = iterator1.next();
+                if (!rule.getRight().equals(rule1.getRight())) {
+                    rules.add(rule);
+                }
+            }
         }
-        return hashSets.size();
+
+        this.RULES.clear();
+        ;
+        this.RULES.addAll(rules);
     }
+
 
     public Set<Clause> getClauseFromConslution() {
         Set<Clause> hashSets = new HashSet<Clause>();

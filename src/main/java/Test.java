@@ -38,12 +38,18 @@ public class Test {
 
                 exercise.thuatToanSuyDienTien(fileRule);
                 exercise.showResult(temClause);
+
+                //loai bo cac luat co ve phai da ton tai
+                exercise.removeRuleInConslution();
+
+                // loai bo cac menh da dung roi khoi menh goc
                 for (Rule rule : exercise.conslution) {
                     clauses = exercise.removeClause(rule.getRight());
                 }
             } else {
                 exercise.removeRule(clause);
             }
+
             clauses = exercise.removeClause(clause);
 
         } while (clauses.size() > 0);
